@@ -1,0 +1,96 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TSS",
+		"_postman_id": "8cc1dd6f-3b72-d908-29ca-dad910ebf515",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/cloud/resources/utenti/",
+			"request": {
+				"url": "http://localhost:8080/cloud/resources/utenti/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJcL3ByaXZhdGVLZXkucGVtIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIyNDQwMDMyMCIsImF1ZCI6InM2QmhkUmtxdDMiLCJ1cG4iOiJyb3NzaSIsImF1dGhfdGltZSI6MTU2MjI1MTIyOCwiaXNzIjoiaXQubXljbG91ZCIsImdyb3VwcyI6WyJ1c2VycyJdLCJleHAiOjE1NjIyNTIyMjgsImlhdCI6MTU2MjI1MTIyOCwianRpIjoiYS0xMjMifQ.QHoXSrCvsgS1BBPrJtBtSWRKInKA2lnoN_7Dm1IeDNBJQtLd_lOqsRr3ET89d4HGWF_biVQ-d8edB8aISNnFVQ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "GET restituisce tutti gli utenti"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/cloud/resources/utenti",
+			"request": {
+				"url": "http://localhost:8080/cloud/resources/utenti",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n    \t\"nome\":\"Alessandra\",\n        \"cognome\": \"Ardissone\",\n        \"email\": \"ardissone@gmail.com\",\n        \"user\": \"ardissone\",\n        \"pw\": \"pw\"\n    }"
+				},
+				"description": "POST, inserimento di un nuovo utente"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/cloud/resources/utenti/4",
+			"request": {
+				"url": "http://localhost:8080/cloud/resources/utenti/4",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\t{\n    \t\"nome\":\"Matteo\",\n        \"cognome\": \"Buccin\",\n        \"email\": \"buccin@gmail.com\",\n        \"user\": \"matteo.buccin\",\n        \"pw\": \"pw\"\n    }"
+				},
+				"description": "PUT, upload su di uno specifico utente"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/cloud/resources/utenti/2",
+			"request": {
+				"url": "http://localhost:8080/cloud/resources/utenti/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": "DEL su un utente con uno specifico ID"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/cloud/resources/utenti/",
+			"request": {
+				"url": "http://localhost:8080/cloud/resources/utenti/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJraWQiOiJcL3ByaXZhdGVLZXkucGVtIiwidHlwIjoiSldUIiwiYWxnIjoiUlMyNTYifQ.eyJzdWIiOiIyNDQwMDMyMCIsImF1ZCI6InM2QmhkUmtxdDMiLCJ1cG4iOiJyb3NzaSIsImF1dGhfdGltZSI6MTU2MjMxNzE4MywiaXNzIjoiaXQubXljbG91ZCIsImdyb3VwcyI6WyJ1c2VycyJdLCJleHAiOjE1NjIzMTgxODMsImlhdCI6MTU2MjMxNzE4MywianRpIjoiYS0xMjMifQ.CLS2-7hvFown5o77Rf8OnBVXAZBXcAkzXf2bOSoE0okXSSMQgjiLbgKxapOExf9hP-wSMZzZ0VOJ_DtBbly0vQ",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "GET, esempio con token di autorizzazione da inserire nell'header delle richieste"
+			},
+			"response": []
+		}
+	]
+}
