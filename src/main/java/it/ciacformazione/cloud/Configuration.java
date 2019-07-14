@@ -10,5 +10,6 @@ package it.ciacformazione.cloud;
  * @author tss
  */
 public class Configuration {
-    public static final String DOCUMENT_FOLDER = "/home/tss/cloud/";
+//    public static final String DOCUMENT_FOLDER = "/home/tss/cloud/";
+    public static final String DOCUMENT_FOLDER = "/home/garrone/cloud/";
 }

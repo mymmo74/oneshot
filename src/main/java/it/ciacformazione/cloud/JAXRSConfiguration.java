@@ -44,7 +44,8 @@ public class JAXRSConfiguration extends Application {
         resources.add(it.ciacformazione.cloud.services.DocumentiResource.class);
         resources.add(it.ciacformazione.cloud.services.PingResource.class);
         resources.add(it.ciacformazione.cloud.services.SecurityResource.class);
-        resources.add(it.ciacformazione.cloud.services.UtentiResources.class);
+        resources.add(it.ciacformazione.cloud.services.UtentiResource.class);
+        resources.add(it.ciacformazione.cloud.services._UtentiResources.class);
     }
 
     

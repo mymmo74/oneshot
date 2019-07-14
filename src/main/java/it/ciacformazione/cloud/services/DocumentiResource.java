@@ -5,7 +5,7 @@
  */
 package it.ciacformazione.cloud.services;
 
-import it.ciacformazione.cloud.business.DocumentoStore;
+import it.ciacformazione.cloud.business._DocumentoStore;
 import it.ciacformazione.cloud.entity.Documento;
 import java.io.InputStream;
 import java.util.List;
@@ -26,7 +26,7 @@ import org.glassfish.jersey.media.multipart.FormDataParam;
 @Path("/documenti")
 public class DocumentiResource {
     @Inject
-    DocumentoStore store;
+    _DocumentoStore store;
     
     @GET
     public List<Documento> findAll() {
