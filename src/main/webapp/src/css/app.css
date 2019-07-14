@@ -37,3 +37,31 @@ footer{
 table.table-select tbody tr:hover{
     background: lightyellow;
 }
+
+#pannelloHome{
+    position: fixed;
+    border: solid 1px black;
+    background-color: red;
+    color: white;
+    border-radius: 30px;
+    
+    /* dimensioni del div */
+    width: 300px;
+    height: 200px;
+    
+    /* con le 4 linee seguenti posiziono il div al centro del div contenitore
+    in particolare gli dico di posizionare (LEFT e TOP) al centro del contenitore
+    poi con i MARGIN (-LEFT e -TOP) lo sposto della metà della dimensione (WIDTH e HEIGHT) del
+    div messaggio, così sistemo il div messaggio */
+    left:50%;
+    top:50%;
+    margin-left: -150px;
+    margin-top: -100px;
+    
+    /* con le due proprietà seguenti metto il testo centrato
+    nel DIV, in particolare la seconda riesco a fare mettendo
+    i pixel uguali al valore della proprietà HEIGHT del div 
+    e posso fare questo SOLO se il testo è in linea */
+    text-align: center;
+    line-height: 200px;
+}
