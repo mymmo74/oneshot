@@ -12,6 +12,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/pure.css" rel="stylesheet" type="text/css"/>
         <link href="css/w3.css" rel="stylesheet" type="text/css"/>
+        <link href="css/app.css" rel="stylesheet" type="text/css"/>
     </head>
 
     <body>
@@ -25,7 +26,7 @@ and open the template in the editor.
         <div style="margin-left:130px">
             <div class="w3-padding"></div>
             <div id="inizio" style="display:block">INIZIO poi via</div>
-            
+
             <div id="Login" class="w3-container tab" style="display:none">
                 <h2>Inserisci i tuoi dati di LOGIN</h2>
                 <p>user</p>
@@ -34,8 +35,44 @@ and open the template in the editor.
 
             <div id="Registrati" class="w3-container tab" style="display:none">
                 <h2>Effettua la registrazione per accedere al servizio</h2>
-                <p>Nome</p> 
-                <p>Utente</p>
+                <form id="regForm" class="pure-form pure-form-aligned">
+                    <fieldset>
+                        <div class="pure-control-group">
+                            <label for="nome">Nome</label>
+                            <input id="nome" type="text" placeholder="Inserisci nome">
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="cognome">Cognome</label>
+                            <input id="cognome" type="text" placeholder="Inserisci cognome">
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="email">Email Address</label>
+                            <input id="email" type="email" placeholder="Inserisci Email">
+                            <span class="pure-form-message-inline redFont">Richiesto</span>
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="user">Scegli Username</label>
+                            <input id="user" type="text" placeholder="Username">
+                            <span class="pure-form-message-inline redFont">Richiesto</span>
+                        </div>
+
+                        <div class="pure-control-group">
+                            <label for="password">Scegli Password</label>
+                            <input id="password" type="password" placeholder="Password">
+                            <span class="pure-form-message-inline redFont">Richiesto</span>
+
+                        </div>
+                        <div class="pure-control-group">
+                            <label for="password2">Ridigita Password</label>
+                            <input id="password2" type="password" placeholder="Password">
+                            <span class="pure-form-message-inline redFont">Richiesto</span>
+                        </div>
+                        <div class="pure-controls">
+
+                            <button type="submit" class="pure-button pure-button-primary">Submit</button>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
 
         </div>
@@ -47,14 +84,16 @@ and open the template in the editor.
 
         <main>
 
-<!--            <header>
-                <h2>I tuoi documenti</h2>
-            </header>-->
+            <!--            <header>
+                            <h2>I tuoi documenti</h2>
+                        </header>-->
 
             <article id="docs">
 
             </article>
         </main>
+        <!--js per gestire la registrazione-->
+        <script src="js/reg.js" type="text/javascript"></script>
         <script src="./js/index.js" type="module"></script>
         <script>
             function openTab(evt, tabName) {
